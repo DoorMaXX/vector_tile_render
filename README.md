@@ -1,2 +1,4 @@
 # vector_tile_render
-The code related to the prototype system for vector tile parsing and  rendering.Published by hbs in 2023 on CUG.
+矢量瓦片渲染原型系统与矢量瓦片解析相关代码
+
+
