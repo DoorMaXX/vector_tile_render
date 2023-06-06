@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="SelectUrl">
+		<size>528,405</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxCheckBox" name="ID_CHECKBOX1" variable="admin_cb" member="yes">
+			<label>administrative district</label>
+			<pos>24,256</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX2" variable="waterarea_cb" member="yes">
+			<label>water area</label>
+			<pos>24,280</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX3" variable="building_cb" member="yes">
+			<label>building</label>
+			<pos>24,304</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX4" variable="road_cb" member="yes">
+			<label>road</label>
+			<pos>232,256</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX5" variable="place_cb" member="yes">
+			<label>place</label>
+			<pos>232,280</pos>
+		</object>
+		<object class="wxButton" name="wxID_OK" variable="Button1" member="yes">
+			<label>OK</label>
+			<pos>136,352</pos>
+		</object>
+		<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+			<pos>24,210</pos>
+			<size>312,1</size>
+		</object>
+		<object class="wxRadioButton" name="ID_RADIOBUTTON1" variable="RadioButton1" member="yes">
+			<label>Tile number</label>
+			<pos>32,48</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>Layers</label>
+			<pos>32,224</pos>
+			<fg>wxSYS_COLOUR_HOTLIGHT</fg>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>Extent</label>
+			<pos>32,16</pos>
+			<fg>wxSYS_COLOUR_HOTLIGHT</fg>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL1" variable="SpinCtrl1" member="yes">
+			<value>837</value>
+			<max>999999999</max>
+			<pos>64,72</pos>
+			<size>152,34</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>Row:</label>
+			<pos>24,80</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+			<label>Col:</label>
+			<pos>32,120</pos>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL2" variable="SpinCtrl2" member="yes">
+			<value>421</value>
+			<max>99999999</max>
+			<pos>64,112</pos>
+			<size>152,34</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL3" variable="SpinCtrl3" member="yes">
+			<value>10</value>
+			<max>18</max>
+			<pos>64,152</pos>
+			<size>152,34</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+			<label>Level:</label>
+			<pos>16,160</pos>
+		</object>
+		<object class="wxRadioButton" name="ID_RADIOBUTTON2" variable="RadioButton2" member="yes">
+			<label>coordinates</label>
+			<pos>328,48</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+			<label>X:</label>
+			<pos>296,80</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+			<label>Y:</label>
+			<pos>296,120</pos>
+		</object>
+		<object class="wxSpinCtrlDouble" name="ID_SPINCTRLDOUBLE1" variable="SpinCtrlDouble1" member="yes">
+			<value>12742033.87</value>
+			<min>-99999999.000000</min>
+			<max>99999999.000000</max>
+			<increment>0.010000</increment>
+			<pos>320,72</pos>
+			<size>192,34</size>
+		</object>
+		<object class="wxSpinCtrlDouble" name="ID_SPINCTRLDOUBLE2" variable="SpinCtrlDouble2" member="yes">
+			<value>3544656.366</value>
+			<min>-99999999.000000</min>
+			<max>99999999.000000</max>
+			<increment>0.010000</increment>
+			<pos>320,112</pos>
+			<size>192,34</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+			<label>Level:</label>
+			<pos>272,160</pos>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL4" variable="SpinCtrl4" member="yes">
+			<value>10</value>
+			<max>18</max>
+			<pos>320,152</pos>
+			<size>160,34</size>
+		</object>
+	</object>
+</wxsmith>

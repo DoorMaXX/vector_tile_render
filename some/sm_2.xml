@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="epsg:4326" background-color="rgb(255,255,255)" base="/home/hbs/code/cb/mapnik_test_image">
+  <Style name="line_1">
+    <Rule>
+      <LineSymbolizer clip="true" stroke="rgb(255,255,255)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_2">
+    <Rule>
+      <Filter>([admin_level]=8)</Filter>
+      <LineSymbolizer stroke="rgb(255,163,72)" stroke-width="0.94999999999999996" stroke-opacity="0.97999999999999998" stroke-linecap="round"/>
+    </Rule>
+  </Style>
+  <Style name="point_1">
+    <Rule>
+      <Filter>([admin_level]=8)</Filter>
+      <PointSymbolizer opacity="1" allow-overlap="false" file="/home/hbs/code/cb/mapnik_test_image/icon_1.png"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_1">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(150,150,200)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_2">
+    <Rule>
+      <Filter>([admin_level]=8)</Filter>
+      <PolygonSymbolizer clip="true" fill="rgb(51,209,122)" fill-opacity="0.90000000000000002"/>
+    </Rule>
+  </Style>
+  <Layer name="myLayerName" srs="epsg:4326">
+    <StyleName>polygon_1</StyleName>
+    <StyleName>polygon_2</StyleName>
+    <StyleName>line_1</StyleName>
+    <StyleName>line_2</StyleName>
+    <StyleName>point_1</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+</Map>

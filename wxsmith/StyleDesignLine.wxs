@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="StyleDesignLine">
+		<size>507,597</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxRadioButton" name="ID_RADIOBUTTON1" variable="RadioButton1" member="yes">
+			<label>Attribute</label>
+			<pos>64,32</pos>
+		</object>
+		<object class="wxRadioButton" name="ID_RADIOBUTTON2" variable="RadioButton2" member="yes">
+			<label>Expression</label>
+			<pos>288,32</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>Field:</label>
+			<pos>16,80</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>Value:</label>
+			<pos>16,128</pos>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE1" variable="Choice1" member="yes">
+			<pos>64,72</pos>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE2" variable="Choice2" member="yes">
+			<pos>64,120</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>Expression:</label>
+			<pos>248,88</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+			<value>[field] = value</value>
+			<pos>336,80</pos>
+			<size>128,34</size>
+		</object>
+		<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+			<pos>16,160</pos>
+			<size>480,1</size>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX1" variable="CheckBox1" member="yes">
+			<label>Line:Line style</label>
+			<checked>1</checked>
+			<pos>64,184</pos>
+			<fg>wxSYS_COLOUR_HOTLIGHT</fg>
+			<bg>wxSYS_COLOUR_BTNSHADOW</bg>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+			<label>Color:</label>
+			<pos>32,232</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+			<label>Width:</label>
+			<pos>32,280</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+			<label>Opacity:</label>
+			<pos>16,328</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+			<label>Line cap:</label>
+			<pos>16,368</pos>
+		</object>
+		<object class="wxColourPickerCtrl" name="ID_COLOURPICKERCTRL1" variable="ColourPickerCtrl1" member="yes">
+			<colour>#000000</colour>
+			<pos>88,224</pos>
+		</object>
+		<object class="wxSpinCtrlDouble" name="ID_SPINCTRLDOUBLE1" variable="SpinCtrlDouble1" member="yes">
+			<value>1</value>
+			<increment>0.010000</increment>
+			<pos>88,272</pos>
+			<size>136,34</size>
+		</object>
+		<object class="wxSpinCtrlDouble" name="ID_SPINCTRLDOUBLE2" variable="SpinCtrlDouble2" member="yes">
+			<value>1</value>
+			<max>1.000000</max>
+			<increment>0.010000</increment>
+			<pos>88,320</pos>
+			<size>136,34</size>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE3" variable="Choice3" member="yes">
+			<pos>88,368</pos>
+		</object>
+		<object class="wxStaticLine" name="ID_STATICLINE2" variable="StaticLine2" member="yes">
+			<pos>240,168</pos>
+			<size>0,344</size>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX2" variable="CheckBox2" member="yes">
+			<label>Label:Text style</label>
+			<pos>312,184</pos>
+			<fg>wxSYS_COLOUR_HOTLIGHT</fg>
+			<bg>wxSYS_COLOUR_BTNSHADOW</bg>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+			<label>Field:</label>
+			<pos>296,232</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT9" variable="StaticText9" member="yes">
+			<label>Placement:</label>
+			<pos>256,280</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT10" variable="StaticText10" member="yes">
+			<label>Size:</label>
+			<pos>296,328</pos>
+		</object>
+		<object class="wxStaticText" name="wxID_ANY" variable="StaticText11" member="yes">
+			<label>Fill Color:</label>
+			<pos>264,376</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT12" variable="StaticText12" member="yes">
+			<label>Halo Color:</label>
+			<pos>256,424</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT13" variable="StaticText13" member="yes">
+			<label>Haro Radius:</label>
+			<pos>248,472</pos>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE4" variable="Choice4" member="yes">
+			<pos>344,224</pos>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE5" variable="Choice5" member="yes">
+			<pos>344,272</pos>
+		</object>
+		<object class="wxSpinCtrlDouble" name="ID_SPINCTRLDOUBLE3" variable="SpinCtrlDouble3" member="yes">
+			<value>1</value>
+			<increment>0.010000</increment>
+			<pos>344,320</pos>
+			<size>136,34</size>
+		</object>
+		<object class="wxColourPickerCtrl" name="ID_COLOURPICKERCTRL2" variable="ColourPickerCtrl2" member="yes">
+			<colour>#000000</colour>
+			<pos>344,368</pos>
+		</object>
+		<object class="wxColourPickerCtrl" name="ID_COLOURPICKERCTRL3" variable="ColourPickerCtrl3" member="yes">
+			<colour>#000000</colour>
+			<pos>344,416</pos>
+		</object>
+		<object class="wxSpinCtrlDouble" name="ID_SPINCTRLDOUBLE4" variable="SpinCtrlDouble4" member="yes">
+			<value>0</value>
+			<increment>0.010000</increment>
+			<pos>344,464</pos>
+			<size>136,34</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<label>Apply</label>
+			<pos>128,536</pos>
+			<handler function="OnButton1Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="wxID_OK" variable="Button2" member="yes">
+			<label>End</label>
+			<pos>256,536</pos>
+		</object>
+	</object>
+</wxsmith>

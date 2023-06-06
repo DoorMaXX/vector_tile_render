@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="epsg:4326" background-color="rgb(255,255,255)">
+  <Style name="line_1">
+    <Rule>
+      <LineSymbolizer clip="true" stroke="rgb(125,125,125)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_2">
+    <Rule>
+      <LineSymbolizer stroke="rgb(53,132,228)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_3">
+    <Rule>
+      <LineSymbolizer stroke="rgb(255,120,0)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_4">
+    <Rule>
+      <LineSymbolizer stroke="rgb(249,240,107)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_1">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(53,132,228)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_2">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(224,27,36)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_3">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(222,221,218)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_4">
+    <Rule>
+      <Filter>([admin_level]=8)</Filter>
+      <PolygonSymbolizer clip="true" fill="rgb(222,221,218)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Layer name="osm_admin" srs="epsg:4326">
+    <StyleName>polygon_4</StyleName>
+    <StyleName>line_1</StyleName>
+    <StyleName>line_4</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="osm_waterareas" srs="epsg:4326">
+    <StyleName>polygon_1</StyleName>
+    <StyleName>line_1</StyleName>
+    <StyleName>line_2</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="osm_buildings" srs="epsg:4326">
+    <StyleName>polygon_2</StyleName>
+    <StyleName>line_3</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="osm_roads" srs="epsg:4326">
+    <StyleName>line_1</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="osm_places" srs="epsg:4326">
+    <StyleName>line_1</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+</Map>

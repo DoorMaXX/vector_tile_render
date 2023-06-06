@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="StyleInfoText">
+		<size>270,532</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>Name:</label>
+			<pos>56,48</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>Expression:</label>
+			<pos>24,96</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>Target:</label>
+			<pos>48,144</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+			<label>Field:</label>
+			<pos>56,192</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+			<label>Placement:</label>
+			<pos>24,240</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+			<label>Size:</label>
+			<pos>56,288</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+			<label>Fill Color:</label>
+			<pos>32,336</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+			<label>Halo Color:</label>
+			<pos>24,384</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT9" variable="StaticText9" member="yes">
+			<label>Halo Radius:</label>
+			<pos>16,432</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT10" variable="name_text" member="yes">
+			<label>Unknown</label>
+			<pos>120,48</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX1" variable="CheckBox1" member="yes">
+			<label>Editable</label>
+			<pos>176,16</pos>
+			<handler function="OnCheckBox1Click" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT11" variable="expression_text" member="yes">
+			<label>Unknown</label>
+			<pos>120,96</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT12" variable="target_text" member="yes">
+			<label>Unknown</label>
+			<pos>120,144</pos>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE1" variable="field_choice" member="yes">
+			<pos>112,184</pos>
+			<enabled>0</enabled>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE2" variable="placement_choice" member="yes">
+			<pos>112,232</pos>
+			<enabled>0</enabled>
+		</object>
+		<object class="wxSpinCtrlDouble" name="ID_SPINCTRLDOUBLE1" variable="size_double" member="yes">
+			<value>0</value>
+			<increment>0.010000</increment>
+			<pos>112,280</pos>
+			<size>136,34</size>
+			<enabled>0</enabled>
+		</object>
+		<object class="wxColourPickerCtrl" name="ID_COLOURPICKERCTRL1" variable="ColourPickerCtrl1" member="yes">
+			<colour>#000000</colour>
+			<pos>112,328</pos>
+			<enabled>0</enabled>
+		</object>
+		<object class="wxColourPickerCtrl" name="ID_COLOURPICKERCTRL2" variable="ColourPickerCtrl2" member="yes">
+			<colour>#000000</colour>
+			<pos>112,376</pos>
+			<enabled>0</enabled>
+		</object>
+		<object class="wxSpinCtrlDouble" name="ID_SPINCTRLDOUBLE2" variable="hradius_double" member="yes">
+			<value>0</value>
+			<increment>0.010000</increment>
+			<pos>112,424</pos>
+			<size>136,34</size>
+			<enabled>0</enabled>
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<label>Edit</label>
+			<pos>24,480</pos>
+			<handler function="OnButton1Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="wxID_OK" variable="Button2" member="yes">
+			<label>Close</label>
+			<pos>144,480</pos>
+		</object>
+	</object>
+</wxsmith>

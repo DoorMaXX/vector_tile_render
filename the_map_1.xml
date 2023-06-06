@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="epsg:4326" background-color="rgb(255,255,255)">
+  <Style name="line_1">
+    <Rule>
+      <LineSymbolizer stroke="rgb(255,190,111)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Layer name="myLayerName" srs="epsg:4326">
+    <StyleName>line_1</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+</Map>

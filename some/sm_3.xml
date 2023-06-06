@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="epsg:4326" background-color="rgb(255,255,255)">
+  <Style name="line_1">
+    <Rule>
+      <LineSymbolizer clip="true" stroke="rgb(255,255,255)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_1">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(150,150,200)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="text_1">
+    <Rule>
+      <Filter>([admin_level]=8)</Filter>
+      <TextSymbolizer placement="polylabel" face-name="DejaVu Sans Book" size="9.9000000000000004" halo-radius="1" fill="rgb(152,106,68)" halo-fill="rgb(87,227,137)">[admin_level]</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Layer name="myLayerName" srs="epsg:4326">
+    <StyleName>polygon_1</StyleName>
+    <StyleName>line_1</StyleName>
+    <StyleName>text_1</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+</Map>

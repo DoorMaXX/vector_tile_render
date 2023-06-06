@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="epsg:4326" background-color="rgb(255,255,255)" base="/home/hbs/code/cb/mapnik_test_image">
+  <Style name="line_1">
+    <Rule>
+      <LineSymbolizer clip="true" stroke="rgb(125,125,125)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_2">
+    <Rule>
+      <LineSymbolizer stroke="rgb(53,132,228)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_3">
+    <Rule>
+      <LineSymbolizer stroke="rgb(255,120,0)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_4">
+    <Rule>
+      <LineSymbolizer stroke="rgb(249,240,107)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_5">
+    <Rule>
+      <Filter>([name]=&apos;梁子湖&apos;)</Filter>
+      <LineSymbolizer stroke="rgb(38,162,105)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="line_6">
+    <Rule>
+      <Filter>([class_]=&apos;railway&apos;)</Filter>
+      <LineSymbolizer stroke="rgb(224,27,36)" stroke-width="1" stroke-opacity="1" stroke-linecap="round"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_1">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(53,132,228)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_2">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(224,27,36)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_3">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(222,221,218)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_4">
+    <Rule>
+      <Filter>([admin_level]=8)</Filter>
+      <PolygonSymbolizer clip="true" fill="rgb(222,221,218)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_5">
+    <Rule>
+      <Filter>([name]=&apos;梁子湖&apos;)</Filter>
+      <PolygonSymbolizer clip="true" fill="rgb(143,240,164)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="text_1">
+    <Rule>
+      <Filter>([name]=&apos;梁子湖&apos;)</Filter>
+      <TextSymbolizer placement="polylabel" face-name="DejaVu Sans Book" halo-radius="1" fill="rgb(98,160,234)">[id]</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Style name="text_2">
+    <Rule>
+      <Filter>([class_]=&apos;railway&apos;)</Filter>
+      <TextSymbolizer placement="line" face-name="DejaVu Sans Book" halo-radius="1">[class_]</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Layer name="osm_admin" srs="epsg:4326">
+    <StyleName>polygon_4</StyleName>
+    <StyleName>line_1</StyleName>
+    <StyleName>line_4</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="osm_waterareas" srs="epsg:4326">
+    <StyleName>polygon_5</StyleName>
+    <StyleName>polygon_1</StyleName>
+    <StyleName>line_1</StyleName>
+    <StyleName>line_2</StyleName>
+    <StyleName>line_5</StyleName>
+    <StyleName>text_1</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="osm_buildings" srs="epsg:4326">
+    <StyleName>polygon_2</StyleName>
+    <StyleName>line_3</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="osm_roads" srs="epsg:4326">
+    <StyleName>line_1</StyleName>
+    <StyleName>line_6</StyleName>
+    <StyleName>text_2</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="osm_places" srs="epsg:4326">
+    <StyleName>line_1</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+</Map>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="epsg:4326" background-color="rgb(255,255,255)">
+  <Style name="line_1">
+    <Rule>
+      <LineSymbolizer clip="true" stroke="rgb(255,255,255)" stroke-width="1" stroke-opacity="1" stroke-linecap="butt"/>
+    </Rule>
+  </Style>
+  <Style name="polygon_1">
+    <Rule>
+      <PolygonSymbolizer clip="true" fill="rgb(150,150,200)" fill-opacity="1"/>
+    </Rule>
+  </Style>
+  <Style name="text_1">
+    <Rule>
+      <Filter>([osm_id]=4291730542)</Filter>
+      <TextSymbolizer placement="polylabel" face-name="DejaVu Sans Book" halo-radius="1" halo-fill="rgb(192,191,188)">[osm_id]</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Style name="text_2">
+    <Rule>
+      <Filter>([osm_id]=4291730542)</Filter>
+      <TextSymbolizer placement="interior" face-name="DejaVu Sans Book" halo-radius="1" halo-fill="rgb(192,191,188)">[osm_id]</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Style name="text_3">
+    <Rule>
+      <Filter>([osm_id]=4291730542)</Filter>
+      <TextSymbolizer face-name="DejaVu Sans Book" halo-radius="1" halo-fill="rgb(192,191,188)">[osm_id]</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Style name="text_4">
+    <Rule>
+      <Filter>([osm_id]=4291730542)</Filter>
+      <TextSymbolizer placement="vertex" face-name="DejaVu Sans Book" halo-radius="1" halo-fill="rgb(192,191,188)">[osm_id]</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Style name="text_5">
+    <Rule>
+      <Filter>([osm_id]=4291730542)</Filter>
+      <TextSymbolizer placement="line" face-name="DejaVu Sans Book" halo-radius="1" halo-fill="rgb(192,191,188)">[osm_id]</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Layer name="myLayerName" srs="epsg:4326">
+    <StyleName>polygon_1</StyleName>
+    <StyleName>line_1</StyleName>
+    <StyleName>text_1</StyleName>
+    <StyleName>text_2</StyleName>
+    <StyleName>text_3</StyleName>
+    <StyleName>text_4</StyleName>
+    <StyleName>text_5</StyleName>
+    <Datasource>
+      <Parameter name="encoding">utf8</Parameter>
+      <Parameter name="file">/home/hbs/mapnik/demo/data/boundaries</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+</Map>
